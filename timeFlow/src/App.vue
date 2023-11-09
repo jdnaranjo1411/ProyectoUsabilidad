@@ -1,47 +1,41 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
+<!-- MainMenu.vue -->
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <h1>TimeFlow</h1>
+    <nav>
+      <ul>
+        <li><router-link to="/tareas">Tareas</router-link></li>
+        <li><router-link to="/proyectos">Proyectos</router-link></li>
+        <li><router-link to="/configuracion">Configuración</router-link></li>
+      </ul>
+    </nav>
   </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>
+
 
 <style scoped>
 header {
-  line-height: 1.5;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 </style>
