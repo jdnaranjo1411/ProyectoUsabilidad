@@ -1,0 +1,5 @@
+10/11/2023 00:10
+He movido varias cosas y creo que algunos errores , la intencion de esta modificacion es
+dar algo de estructura a el proyecto , dentro de la carpeta componentes han quedado distintas subcarpetas
+basadas en atomic design, se propone crear las distintas paginas con esta metodologia, puede que llegemos a necesitar
+crear routers anidados

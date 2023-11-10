@@ -1,30 +1,22 @@
-import Vue from 'vue';
-import App from './App.vue';
-import VueRouter from 'vue-router';
-import MainMenu from './components/MainMenu.vue';
-import MobileMenu from './components/MobileMenu.vue';
+import './assets/main.css'
+import { createApp } from 'vue'
+import { createRouter, createWebHistory } from 'vue-router' //se importan las librerias
+import Header from './components/Organisms/header/Header.vue'
 
-Vue.config.productionTip = false;
+import App from './App.vue'
 
-Vue.use(VueRouter);
+const app = createApp(App)
 
 const routes = [
-  // Define tus rutas aquí si estás utilizando Vue Router
-];
-
-const router = new VueRouter({
-  routes,
-  mode: 'history', // o usa 'hash' si prefieres URLs con hash
-});
-
-// Registra tus componentes globales
-Vue.component('main-menu', MainMenu);
-Vue.component('mobile-menu', MobileMenu);
-
-new Vue({
-  render: (h) => h(App),
-  router,
-}).$mount('#app');
-
-
+  { path: '/', component: Header }, // aqui solo se probo el componente header, lo correcto seria llamar un componente dentro de la carpeta pages 
+  /* para realizar las distintas paginas tenemos que utilizar routers anidados
+   AQUI LA DOCUMENTACION: https://router.vuejs.org/guide/essentials/nested-routes.html
+  */
+]
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+})
+app.use(router)
+app.mount('#app')
 
