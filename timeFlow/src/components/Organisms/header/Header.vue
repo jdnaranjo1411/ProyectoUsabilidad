@@ -1,3 +1,11 @@
+<script>
+import HeaderOpcion from "@/components/Atoms/Headerutil/HeaderOpcion.vue";
+export default{
+    components:{
+        HeaderOpcion
+    }
+}
+</script>
 <template>
     <header>
         <nav>
@@ -11,6 +19,25 @@
             <h1>
                 TIMEFLOW
             </h1>
+            <div class="contenedorOpciones">
+                <HeaderOpcion>
+                    <template v-slot:icon>
+                        settings
+                    </template>
+                    <template v-slot:tooltip>
+                        Configuración
+                    </template>
+                </HeaderOpcion>
+                <HeaderOpcion>
+                    <template v-slot:icon>
+                         account_circle
+                    </template>
+                    <template v-slot:tooltip>
+                        Perfil
+                    </template>
+                </HeaderOpcion>
+            </div>
+            
         </nav>
     </header>
 </template>
@@ -29,7 +56,6 @@ header nav {
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: center;
 }
 
 .contenedorHamburguer {
@@ -53,5 +79,32 @@ header nav {
 
 .contenedorHamburguer .material-symbols-outlined {
     font-size: 2rem;
+}
+.contenedorOpciones {
+    display: none;
+}
+@media (min-width: 768px) {
+    .contenedorHamburguer {
+        display: none;
+    }
+    
+    header {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .contenedorOpciones {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+
+
+
 }
 </style>
