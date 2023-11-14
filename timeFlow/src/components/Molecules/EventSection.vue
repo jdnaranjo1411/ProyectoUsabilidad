@@ -2,14 +2,13 @@
     <div class="event-section">
       <h2 class="event-section__title">{{ sectionTitle }}</h2>
       <div class="event-section__cards">
-        <EventoCard v-for="event in events" :key="event.id" :event="event" />
+        <EventCard v-for="event in events" :key="event.id" :event="event" />
       </div>
     </div>
   </template>
   
   <script>
-  import EventoCard from '@/components/atoms/EventoCard';
-  
+  import EventCard from '../Atoms/EventCard.vue';  
   export default {
     props: {
       sectionTitle: {
@@ -22,7 +21,7 @@
       },
     },
     components: {
-      EventoCard,
+      EventCard,
     },
   };
   </script>
