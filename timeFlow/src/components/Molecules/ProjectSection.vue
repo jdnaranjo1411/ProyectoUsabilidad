@@ -29,7 +29,7 @@
   
   <style scoped>
   .project-section {
-    margin-bottom: 24px;
+    padding: 24px;
   }
   
   .project-section__title {
@@ -40,8 +40,10 @@
   
   .project-section__cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     overflow-x: auto;
+    
   }
   </style>
   
