@@ -1,31 +1,33 @@
+<script>
+import EventCard from '../Atoms/EventCard.vue';  
+export default {
+  props: {
+    sectionTitle: {
+      type: String,
+      required: true,
+    },
+    events: {
+      type: Array,
+      required: true,
+    },
+  },
+  components: {
+    EventCard,
+  },
+};
+</script>
+
+
 <template>
-    <div class="event-section">
+    <section class="event-section">
       <h2 class="event-section__title">{{ sectionTitle }}</h2>
       <div class="event-section__cards">
         <EventCard v-for="event in events" :key="event.id" :event="event" />
       </div>
-    </div>
+    </section>
   </template>
   
-  <script>
-  import EventCard from '../Atoms/EventCard.vue';  
-  export default {
-    props: {
-      sectionTitle: {
-        type: String,
-        required: true,
-      },
-      events: {
-        type: Array,
-        required: true,
-      },
-    },
-    components: {
-      EventCard,
-    },
-  };
-  </script>
-  
+
   <style scoped>
   .event-section {
     margin-bottom: 24px;
@@ -39,8 +41,10 @@
   
   .event-section__cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     overflow-x: auto;
+
   }
   </style>
   

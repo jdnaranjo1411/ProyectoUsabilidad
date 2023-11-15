@@ -60,6 +60,11 @@
     opacity: 1;
     transition: opacity 0.5s ease 0.5s;
   }
+
+  .header-option button:focus + .header-option__tooltip {
+    opacity: 1;
+    transition: opacity 0.5s ease 0.5s;
+  }
   
   .header-option button:hover {
     background-color: rgba(0, 0, 0, 0.1);

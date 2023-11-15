@@ -5,13 +5,14 @@
       </div>
       <div class="event-card__content">
         <h3 class="event-card__title">{{ event.title }}</h3>
-        <p class="event-card__date">{{ event.date }}</p>
+        <p class="event-card__date">{{ event.start }}</p>
         <p class="event-card__countdown">{{ timeUntilEvent }}</p>
       </div>
     </div>
   </template>
   
   <script>
+  
   export default {
     props: {
       event: {
@@ -31,9 +32,10 @@
   
   <style scoped>
   .event-card {
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border);
     border-radius: 8px;
     overflow: hidden;
+    min-width: 182px;
   }
   
   .event-card__header {
@@ -55,7 +57,7 @@
   .event-card__date {
     margin: 8px 0;
     font-size: 1rem;
-    color: #555;
+    color: var(--color-text-subtle);
   }
   
   .event-card__countdown {

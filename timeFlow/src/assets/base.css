@@ -1,21 +1,21 @@
-/* color palette from <https://github.com/vuejs/theme> */
-:root {
-  /*
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;   AGREGAR VARIABLES PALETA DE COLORES
-  --vt-c-white-mute: #f2f2f2;
-  */
 
+:root {
+  --color-text: #000;
+  --color-text-subtle: #000000a8;
+  --color-background: #fff;
+  --color-border: #2a2a2a;
+  --color-shadow1: rgba(0, 0, 0, 0.5);
 }
 
-/* semantic color variables for this project */
-:root {
-  /* variables por defecto */
-}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* variables si se prefiere modo oscuro */
+    --color-text: #fff;
+    --color-text-subtle: #ffffff8f;
+    --color-background: #1e1e1e;
+    --color-border: #b2b2b2; 
+    --color-shadow1: rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -25,6 +25,9 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
+}
+button {
+  color: var(--color-text);
 }
 
 body {
@@ -53,4 +56,5 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
