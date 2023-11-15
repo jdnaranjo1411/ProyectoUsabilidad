@@ -16,4 +16,5 @@ puej , trabaje un poco con el componentes que va a aparecer para configuraciones
 css pero pues , principalmente eso 
 
 
-mover dashboard a templates y desde ahi llamar a las distintas secciones?
+mover dashboard a templates y desde ahi llamar a las distintas secciones? 
++++
