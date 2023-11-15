@@ -10,3 +10,7 @@ y pues realmente mayormente solo hay que tener en cuenta que el estado focus de 
 
 y por ultimo no olvidar implementar las etiquetas relacionadas a accesibilidad y las etiquetas semanticas
 https://www.w3.org/WAI/tips/developing/
+
+15/11/26 11:26
+puej , trabaje un poco con el componentes que va a aparecer para configuraciones , probablemente aun hay que configurar algunas cosas al
+css pero pues , principalmente eso 
