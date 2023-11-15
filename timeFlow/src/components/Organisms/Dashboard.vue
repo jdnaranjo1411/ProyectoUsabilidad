@@ -6,7 +6,7 @@
   </template>
   
   <script>
-  import ProjectSection from '@/components/molecules/ProjectSection';
+  import ProjectSection from '@/components/molecules/ProjectSection.vue';
   
   export default {
     data() {

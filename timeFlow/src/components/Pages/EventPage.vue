@@ -1,25 +1,28 @@
 <script>
 import EventSection from '@/components/Molecules/EventSection.vue';
+import ProjectSection from '@/components/Molecules/ProjectSection.vue';
 import Header from '@/components/Organisms/header.vue';
 import FakeAPI from '../FakeAPI/FakeAPI';
 export default {
   data() {
     return {
       upcomingEvents: FakeAPI.getTasks(1),
+      projects: FakeAPI.getEventos()
     };
   },
   components: {
     EventSection,
+    ProjectSection,
     Header
   },
 };
 </script>
 
 <template>
-  <Header></Header>
-  <div class="event-page">
+  <Header />
     <EventSection sectionTitle="Próximos Eventos" :events="upcomingEvents" />
-  </div>
+    <ProjectSection sectionTitle="Proyectos" :projects="projects"  />
+    
   
 </template>
   

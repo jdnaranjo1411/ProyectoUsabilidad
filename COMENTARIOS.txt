@@ -14,3 +14,6 @@ https://www.w3.org/WAI/tips/developing/
 15/11/26 11:26
 puej , trabaje un poco con el componentes que va a aparecer para configuraciones , probablemente aun hay que configurar algunas cosas al
 css pero pues , principalmente eso 
+
+
+mover dashboard a templates y desde ahi llamar a las distintas secciones?

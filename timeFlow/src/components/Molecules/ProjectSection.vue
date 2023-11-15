@@ -2,13 +2,13 @@
     <div class="project-section">
       <h2 class="project-section__title">{{ sectionTitle }}</h2>
       <div class="project-section__cards">
-        <ProyectoCard v-for="project in projects" :key="project.id" :project="project" />
+        <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
       </div>
     </div>
   </template>
   
   <script>
-  import ProyectoCard from '@/components/atoms/ProyectoCard';
+  import ProjectCard from '@/components/Atoms/ProjectCard.vue';
   
   export default {
     props: {
@@ -22,7 +22,7 @@
       },
     },
     components: {
-      ProyectoCard,
+      ProjectCard,
     },
   };
   </script>

@@ -30,7 +30,9 @@ export default {
 
   <style scoped>
   .event-section {
-    margin-bottom: 24px;
+    margin: 24px;
+    margin-bottom: 48px;
+
   }
   
   .event-section__title {
