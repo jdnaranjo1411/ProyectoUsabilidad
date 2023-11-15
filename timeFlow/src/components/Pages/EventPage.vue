@@ -1,6 +1,5 @@
 <script>
-import EventSection from '@/components/Molecules/EventSection.vue';
-import ProjectSection from '@/components/Molecules/ProjectSection.vue';
+import Dashboard from '@/components/Templates/Dashboard.vue';
 import Header from '@/components/Organisms/header.vue';
 import FakeAPI from '../FakeAPI/FakeAPI';
 export default {
@@ -11,17 +10,15 @@ export default {
     };
   },
   components: {
-    EventSection,
-    ProjectSection,
+    Dashboard,
     Header
   },
 };
 </script>
 
 <template>
-  <Header />
-    <EventSection sectionTitle="Próximos Eventos" :events="upcomingEvents" />
-    <ProjectSection sectionTitle="Proyectos" :projects="projects"  />
+  <Header/>
+    <Dashboard :upcomingEvents="upcomingEvents" :projects="projects" />
     
   
 </template>
