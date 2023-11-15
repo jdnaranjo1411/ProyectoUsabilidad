@@ -3,7 +3,7 @@ import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import EventPage from '@/components/Pages/EventPage.vue';
 import ConfiguracionesPopUp from '@/components/Templates/ConfiguracionesPopUp.vue';
-import Dashboard from '@/components/Templates/Dashboard.vue'; // esto no esta en templates!!!
+import Dashboard from '@/components/Organisms/Dashboard.vue'; // esto no esta en templates!!!
 import App from './App.vue';
 
 const app = createApp(App);
