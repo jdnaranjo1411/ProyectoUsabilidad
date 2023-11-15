@@ -1,0 +1,47 @@
+<template>
+    <div class="project-section">
+      <h2 class="project-section__title">{{ sectionTitle }}</h2>
+      <div class="project-section__cards">
+        <ProyectoCard v-for="project in projects" :key="project.id" :project="project" />
+      </div>
+    </div>
+  </template>
+  
+  <script>
+  import ProyectoCard from '@/components/atoms/ProyectoCard';
+  
+  export default {
+    props: {
+      sectionTitle: {
+        type: String,
+        required: true,
+      },
+      projects: {
+        type: Array,
+        required: true,
+      },
+    },
+    components: {
+      ProyectoCard,
+    },
+  };
+  </script>
+  
+  <style scoped>
+  .project-section {
+    margin-bottom: 24px;
+  }
+  
+  .project-section__title {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .project-section__cards {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+  }
+  </style>
+  

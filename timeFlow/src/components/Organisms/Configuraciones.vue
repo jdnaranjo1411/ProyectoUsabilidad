@@ -1,9 +1,11 @@
 <script>
 import LabelCheckbox from '../Molecules/LabelCheckbox.vue';
+import Boton1 from '../Atoms/Boton1.vue';
 
 export default {
     components: {
         LabelCheckbox,
+        Boton1
     }
 }
 </script>
@@ -20,8 +22,7 @@ export default {
         <LabelCheckbox :name="'eventosPasados'">
             Opcion 3
         </LabelCheckbox>
-       
-        
+        <Boton1 :name="'Guardar'"></Boton1>
     </form>
 </template>
 

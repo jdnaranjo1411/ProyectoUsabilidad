@@ -1,25 +1,25 @@
-import './assets/main.css'
-import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router' //se importan las librerias
-import EventPage from '../src/components/Pages/EventPage.vue' //se importa el componente header
-import ConfiguracionesPopUp from '@/components/Templates/ConfiguracionesPopUp.vue'
+import './assets/main.css';
+import { createApp } from 'vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import EventPage from '@/components/Pages/EventPage.vue';
+import ConfiguracionesPopUp from '@/components/Templates/ConfiguracionesPopUp.vue';
+import Dashboard from '@/components/Templates/Dashboard.vue'; // esto no esta en templates!!!
+import App from './App.vue';
 
-import App from './App.vue'
-
-const app = createApp(App)
+const app = createApp(App);
 
 const routes = [
-  { path: '/', component: EventPage}, // aqui solo se probo el componente header, lo correcto seria llamar un componente dentro de la carpeta pages 
-  /* para realizar las distintas paginas tenemos que utilizar routers anidados
-   AQUI LA DOCUMENTACION: https://router.vuejs.org/guide/essentials/nested-routes.html
-  */
-]
+  { path: '/', component: EventPage, name: 'EventPage' },
+  { path: '/dashboard', component: Dashboard, name: 'Dashboard' },
+  // Otras rutas según sea necesario
+];
+
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes,
+});
 
+app.use(router);
+app.mount('#app');
 
-app.use(router)
-app.mount('#app')
 
