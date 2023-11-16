@@ -8,7 +8,7 @@ export default {
 </script>
 <template>
     <div class="contenedorOpciones">
-        <HeaderOpcion>
+        <HeaderOpcion @button-clicked = "$emit('button-clicked-settings')">
             <template v-slot:icon>
                 settings
             </template>

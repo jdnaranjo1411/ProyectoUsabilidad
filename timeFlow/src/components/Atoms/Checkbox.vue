@@ -62,4 +62,9 @@ export default {
 .centro__input:checked::before{
     left: 20px;
 }
+
+.centro__input:focus{
+    outline: 2px solid #333;
+    outline-offset: 15px;
+}
 </style>

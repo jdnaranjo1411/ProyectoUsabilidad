@@ -1,6 +1,6 @@
 <template>
     <div class="header-option">
-      <button ref="button">
+      <button ref="button" @click="$emit('button-clicked')">
         <span class="header-option__icon material-symbols-outlined">
           <slot name="icon"></slot>
         </span>

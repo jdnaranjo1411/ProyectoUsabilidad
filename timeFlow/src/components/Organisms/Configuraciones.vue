@@ -12,6 +12,7 @@ export default {
 
 <template>
     <form>
+        <button @click.prevent="$emit('button-close')" class="closeButton">X</button>
         <h1 class="labelConfiguraciones">Configuraciones</h1>
         <LabelCheckbox :name="'eventosPasados'">
             Opcion 1
@@ -36,8 +37,10 @@ form {
     width: 80%;
     height: 450px;
     padding: 20px;
-    box-shadow: 0 0 10px 4px var(--color-shadow1);
+    z-index: 1;
+    box-shadow: 0 0 40px 6px var(--color-shadow1);
     border-radius: 20px;
+    background-color: var(--color-popUpBackground);
 }
 .labelConfiguraciones{
     font-size: 2rem;

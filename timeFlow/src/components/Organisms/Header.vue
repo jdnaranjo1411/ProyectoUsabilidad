@@ -20,6 +20,7 @@ export default{
         handleResize(){
             this.screenWidth = window.innerWidth;
         }
+
     }
 
 }
@@ -34,7 +35,7 @@ export default{
             <h1>
                 TIMEFLOW
             </h1>
-            <OpcionesHeader v-if = "(screenWidth >= 768)"></OpcionesHeader>
+            <OpcionesHeader v-if = "(screenWidth >= 768)" @button-clicked-settings= "$emit('button-clicked-settings-h')"></OpcionesHeader>
             
         </nav>
     </header>
