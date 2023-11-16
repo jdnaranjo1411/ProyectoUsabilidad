@@ -9,14 +9,13 @@ export default {
 <template>
     <div class="project-options">
         <projectOption :icon = "'group'">
-            <template>
                 Integrantes
-            </template>
+            
         </projectOption>
         <projectOption :icon = "'task'">
-            <template>
+            
                 tareas
-            </template>
+            
         </projectOption>
 
     </div>

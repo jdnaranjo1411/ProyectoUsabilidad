@@ -2,15 +2,16 @@ import './assets/main.css';
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import EventPage from '@/components/Pages/EventPage.vue';
-import ConfiguracionesPopUp from '@/components/Templates/ConfiguracionesPopUp.vue';
-import Dashboard from '@/components/Templates/Dashboard.vue'; // esto no esta en templates!!!
+
+
 import App from './App.vue';
+import ProyectoPage from './components/Pages/ProyectoPage.vue';
 
 const app = createApp(App);
 
 const routes = [
   { path: '/', component: EventPage, name: 'EventPage' },
-  { path: '/Proyecto', component: Dashboard, name: 'ProjectPage' },
+  { path: '/Proyecto', component: ProyectoPage , name: 'ProjectPage' },
   // Otras rutas según sea necesario
 ];
 
