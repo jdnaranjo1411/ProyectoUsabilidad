@@ -36,10 +36,10 @@ export default {
     height: 20px;
     -webkit-appearance: none;
     background: #c6c6c6;
-    outline: none;
     border-radius: 20px;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
     transition: .5s ease;
+    
 }
 
 .centro__input:checked{
@@ -58,13 +58,17 @@ export default {
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     transition: .5s ease;
+    
 }
 .centro__input:checked::before{
     left: 20px;
 }
 
+
 .centro__input:focus{
-    outline: 2px solid #333;
-    outline-offset: 15px;
+    outline: 2px solid var(--color-border);
+    outline-offset: 6px;
+    transition: none;
+    
 }
 </style>

@@ -51,7 +51,7 @@ export default {
 }
 .label-checkbox__label {
     flex-grow: 1;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 80%;
 }
 

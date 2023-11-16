@@ -9,9 +9,8 @@ export default {
 
 <template>
     <div class = "blurredBackground">
-        <Configuraciones></Configuraciones>
+        <Configuraciones @button-close="$emit('button-close')" ></Configuraciones>
         
-
     </div>
 </template>
 <style>
