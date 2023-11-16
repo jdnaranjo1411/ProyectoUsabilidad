@@ -3,6 +3,7 @@
     <!-- Contenido de tu aplicación -->
     <AddButton @showPopup="showPopup" />
     <CreatePopup :showPopup="popupVisible" @closePopup="closePopup" @createProject="createProject" />
+    <HeaderWithDropdown/>
   </div>
 <RouterView/> 
 </template>
@@ -12,6 +13,8 @@ import { RouterView } from 'vue-router';
 import CreatePopUp from './components/Molecules/CreatePopUp.vue';
 import AddButton from '@/components/atoms/AddButton.vue';
 import CreatePopup from '@/components/molecules/CreatePopup.vue';
+import HeaderHamburguer from './components/Atoms/Headerutil/HeaderHamburguer.vue';
+import HeaderWithDropdown from './components/Organisms/HeaderWithDropdown.vue';
 
 export default{
     data() {
@@ -40,7 +43,9 @@ export default{
   components: {
     AddButton,
     CreatePopup,
-  },
+    HeaderHamburguer,
+    HeaderWithDropdown
+},
 };
 </script>
 
