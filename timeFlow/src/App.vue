@@ -3,6 +3,7 @@
     <!-- Contenido de tu aplicación -->
     <AddButton @showPopup="showPopup" />
     <CreatePopup :showPopup="popupVisible" @closePopup="closePopup" @createProject="createProject" />
+    <HeaderWithDropdown/>
   </div>
 <RouterView/> 
 </template>
@@ -40,7 +41,9 @@ export default{
   components: {
     AddButton,
     CreatePopup,
-  },
+    HeaderHamburguer,
+    HeaderWithDropdown
+},
 };
 </script>
 
