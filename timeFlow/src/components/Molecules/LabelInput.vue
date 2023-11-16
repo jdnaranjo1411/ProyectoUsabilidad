@@ -1,7 +1,6 @@
 <script>
 import Input from '@/components/Atoms/Input.vue';
 export default {
-
     props: {
         placeholder: {
             type: String,
