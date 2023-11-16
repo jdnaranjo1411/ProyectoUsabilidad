@@ -1,7 +1,7 @@
 <template>
     <div class="project-card">
       <div class="project-card__header">
-        <!-- Aqui iria la imagen -->
+        <img src="@/assets/imgs/3.jpeg" alt="Project image" />
       </div>
       <div class="project-card__content">
         <h3 class="project-card__title">{{ project.title }}</h3>
@@ -18,20 +18,33 @@
         required: true,
       },
     },
+
+    
+    
+    
   };
   </script>
   
   <style scoped>
   .project-card {
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border);
     border-radius: 8px;
     overflow: hidden;
+    max-width: 500px;
+    transition: ease 0.2s;
   }
+  .project-card:hover {
+    box-shadow: 0 0 12px 2px var(--color-shadow1);
+    cursor: pointer;
+    background-color: var(--color-highlight);
+  }
+
   
   .project-card__header {
     height: 150px;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
   }
   
   .project-card__content {
@@ -47,7 +60,7 @@
   .project-card__description {
     margin: 8px 0;
     font-size: 1rem;
-    color: #555;
+    color:  var(--color-text-subtle);
   }
   </style>
   

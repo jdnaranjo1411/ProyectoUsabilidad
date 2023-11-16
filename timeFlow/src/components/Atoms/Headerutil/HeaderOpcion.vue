@@ -58,12 +58,12 @@
   
   .header-option button:hover + .header-option__tooltip {
     opacity: 1;
-    transition: opacity 0.5s ease 0.5s;
+    transition: opacity 0.5s ease 3s;
   }
 
   .header-option button:focus + .header-option__tooltip {
     opacity: 1;
-    transition: opacity 0.5s ease 0.5s;
+    transition: opacity 0.5s ease 2s;
   }
   
   .header-option button:hover {

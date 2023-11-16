@@ -41,8 +41,6 @@ export default{
   components: {
     AddButton,
     CreatePopup,
-    HeaderHamburguer,
-    HeaderWithDropdown
 },
 };
 </script>

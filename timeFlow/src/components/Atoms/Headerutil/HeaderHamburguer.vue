@@ -1,6 +1,6 @@
 <template>
 <div class="contenedorHamburguer">
-                <button>
+                <button @click="$emit('button-clicked')">
                     <span class="material-symbols-outlined ">
                         menu
                     </span>

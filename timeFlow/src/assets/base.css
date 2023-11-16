@@ -1,13 +1,24 @@
-
 :root {
   --color-text: #000;
   --color-text-subtle: #000000a8;
   --color-popUpBackground: #fff;
   --color-background: #fff;
-  --color-border: #2a2a2a;
-  --color-shadow1: rgba(0, 0, 0, 0.5);
+  --color-border: #a6a6a6;
+  --color-shadow1: rgba(0, 0, 0, 0.3);
+  --color-highlight: rgba(0, 0, 0, 0.017);
   --color-buttonPrimary: #55357e;
   --color-buttonPrimaryHover: #6c4ba0;
+
+}
+
+.mode-dark {
+  --color-text: #fff;
+  --color-text-subtle: #ffffff8f;
+  --color-background: #1e1e1e;
+  --color-highlight: rgba(255, 255, 255, 0.026);
+  --color-popUpBackground: #3a3a3a;
+  --color-border: #676767;
+  --color-shadow1: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -17,9 +28,22 @@
     --color-text: #fff;
     --color-text-subtle: #ffffff8f;
     --color-background: #1e1e1e;
+    --color-highlight: rgba(255, 255, 255, 0.026);
     --color-popUpBackground: #3a3a3a;
-    --color-border: #b2b2b2; 
+    --color-border: #676767;
     --color-shadow1: rgba(255, 255, 255, 0.1);
+  }
+
+  .mode-dark {
+    --color-text: #000;
+    --color-text-subtle: #000000a8;
+    --color-popUpBackground: #fff;
+    --color-background: #fff;
+    --color-border: #a6a6a6;
+    --color-shadow1: rgba(0, 0, 0, 0.3);
+    --color-highlight: rgba(0, 0, 0, 0.017);
+    --color-buttonPrimary: #55357e;
+    --color-buttonPrimaryHover: #6c4ba0;
   }
 }
 

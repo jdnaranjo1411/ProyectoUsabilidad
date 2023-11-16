@@ -31,11 +31,11 @@ export default{
 <template>
     <header>
         <nav>
-            <HeaderHamburguer v-if="(screenWidth < 768)"></HeaderHamburguer>
+            <HeaderHamburguer v-if="(screenWidth < 768)" @click = "$emit('Hamburguer-click')"></HeaderHamburguer>
             <h1>
                 TIMEFLOW
             </h1>
-            <OpcionesHeader v-if = "(screenWidth >= 768)" @button-clicked-settings= "$emit('button-clicked-settings-h')"></OpcionesHeader>
+            <OpcionesHeader v-if = "(screenWidth >= 768)" @button-clicked-settings= "$emit('button-clicked-settings-h')" @button-clicked-account = "$emit('button-clicked-account')"></OpcionesHeader>
             
         </nav>
     </header>

@@ -6,6 +6,11 @@ export default {
     components: {
         LabelCheckbox,
         Boton1
+    },
+    methods: {
+        changeDarkMode() {
+            document.body.classList.toggle('mode-dark');
+        }
     }
 }
 </script>
@@ -17,8 +22,8 @@ export default {
         </button>
         <h1 class="labelConfiguraciones">Configuraciones</h1>
         <div class="ContenedorOpciones">
-        <LabelCheckbox :name="'ModoOscuro'">
-            Modo oscuro
+        <LabelCheckbox :name="'ModoOscuro'" @change = "changeDarkMode">
+            Modo oscuro / claro
         </LabelCheckbox>
         <LabelCheckbox :name="'EventosPasados'">
             Eventos pasados
@@ -28,7 +33,7 @@ export default {
             Notificaciones
         </LabelCheckbox>
         </div>
-        <Boton1 :texto="'Guardar'"></Boton1>
+        
     </form>
 </template>
 

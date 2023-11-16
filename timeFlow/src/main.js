@@ -10,7 +10,7 @@ const app = createApp(App);
 
 const routes = [
   { path: '/', component: EventPage, name: 'EventPage' },
-  { path: '/dashboard', component: Dashboard, name: 'Dashboard' },
+  { path: '/Proyecto', component: Dashboard, name: 'ProjectPage' },
   // Otras rutas según sea necesario
 ];
 

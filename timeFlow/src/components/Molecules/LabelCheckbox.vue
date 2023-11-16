@@ -9,20 +9,16 @@ export default {
             type: String,
             required: true,
         },
-        /*
-        onClick: {
-            type: Function,
+        
+    },
+    props: {
+        name: {
+            type: String,
             required: true,
         },
-        */
-    },
-    data() {
-        return {
-            label: null,
-            onClick: () => {
-                
-            },
-        };
+        
+        
+        
     },
     /*leer valor dentro de label */
     ngOnInit() {
@@ -38,7 +34,7 @@ export default {
         <label class="label-checkbox__label" :for="name">
             <slot></slot>
         </label>
-        <Checkbox :name="name" :onClick="onClick" />
+        <Checkbox :name="name" @checked = "$emit('change')"/>
     </div>
 </template>
 <style scoped>

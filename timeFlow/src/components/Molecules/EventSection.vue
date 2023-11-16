@@ -45,7 +45,6 @@ export default {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    overflow-x: auto;
 
   }
   </style>

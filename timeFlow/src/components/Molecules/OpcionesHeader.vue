@@ -16,7 +16,7 @@ export default {
                 Configuración
             </template>
         </HeaderOpcion>
-        <HeaderOpcion>
+        <HeaderOpcion @button-clicked = "$emit('button-clicked-account')">
             <template v-slot:icon>
                 account_circle
             </template>

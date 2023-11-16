@@ -6,10 +6,7 @@ export default {
             type: String,
             required: true,
         },
-        onClick: {
-            type: Function,
-            required: true,
-        },
+        
     },
     data() {
         return {
@@ -24,7 +21,7 @@ export default {
 
 <template>
     <div class="centro">
-    <input type="checkbox" class="centro__input" :name="name" :on-click="onClick">
+    <input type="checkbox" class="centro__input" :name="name" :checked="$emit('change')">
     </div>
 </template>
 <style>

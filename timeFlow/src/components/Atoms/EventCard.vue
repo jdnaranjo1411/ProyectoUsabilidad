@@ -1,7 +1,7 @@
 <template>
     <div class="event-card">
       <div class="event-card__header">
-        <!-- Puedes agregar la imagen del evento aquí -->
+        <img src="@/assets/imgs/1.jpeg" alt="Imagen del evento" />
       </div>
       <div class="event-card__content">
         <h3 class="event-card__title">{{ event.title }}</h3>
@@ -27,6 +27,7 @@
         return "2 días"; // Ejemplo, debes implementar la lógica real aquí
       },
     },
+  
   };
   </script>
   
@@ -36,12 +37,21 @@
     border-radius: 8px;
     overflow: hidden;
     min-width: 182px;
+    transition: ease 0.2s;
+    max-width: 300px;
+  }
+
+  .event-card:hover {
+    box-shadow: 0 0 12px 2px var(--color-shadow1);
+    cursor: pointer;
+    background-color: var(--color-highlight);
   }
   
   .event-card__header {
     height: 150px; /* Ajusta según tus necesidades */
     background-size: cover;
     background-position: center;
+    overflow: hidden;
   }
   
   .event-card__content {
