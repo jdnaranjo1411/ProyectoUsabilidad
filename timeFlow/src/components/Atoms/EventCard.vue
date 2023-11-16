@@ -1,3 +1,4 @@
+
 <template>
     <div class="event-card">
       <div class="event-card__header">
@@ -75,4 +76,6 @@
     color: #f00;
   }
   </style>
+  
+
   
