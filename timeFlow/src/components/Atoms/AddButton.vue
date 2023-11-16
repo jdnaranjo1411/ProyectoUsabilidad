@@ -15,13 +15,13 @@
   <style scoped>
   .add-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: purple;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--color-buttonPrimary);
     color: white;
     font-size: 24px;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: none;
     cursor: pointer;

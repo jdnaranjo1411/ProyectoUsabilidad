@@ -8,18 +8,23 @@ export default {
         onClick: {
             type: Function,
             default: () => {}
+        },
+        type: {
+            type: String,
+            default: 'button'
         }
     }
 }
 </script>
 <template>
-    <button class="Boton1">
+    <button class="Boton1" :type="type">
         {{texto}}
     </button>
 </template>
 <style scoped>
 .Boton1 {
     background-color: var(--color-buttonPrimary);
+    color: white;
     border: none;
     padding: 15px 32px;
     text-align: center;

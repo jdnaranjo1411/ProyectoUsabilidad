@@ -9,9 +9,9 @@
 
 <script>
 import { RouterView } from 'vue-router';
-import CreatePopUp from './components/Molecules/CreatePopUp.vue';
+
 import AddButton from '@/components/atoms/AddButton.vue';
-import CreatePopup from '@/components/molecules/CreatePopup.vue';
+import CreatePopup from '@/components/Templates/CreatePopup.vue';
 
 export default{
     data() {

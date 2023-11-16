@@ -28,7 +28,7 @@ export default {
             Notificaciones
         </LabelCheckbox>
         </div>
-        <Boton1 :name="'Guardar'"></Boton1>
+        <Boton1 :texto="'Guardar'"></Boton1>
     </form>
 </template>
 
