@@ -26,7 +26,7 @@ export default {
 
 <template>
   <Header @button-clicked-settings-h = "toggleSettings()"/>
-    <Dashboard :upcomingEvents="upcomingEvents" :projects="projects" />
+    <Dashboard :upcomingEvents="upcomingEvents" :projects="projects"  />
     <ConfiguracionesPopUp v-if="showPopupSettings" @button-close= "toggleSettings()"/>
     
     
