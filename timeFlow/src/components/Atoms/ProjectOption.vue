@@ -16,7 +16,7 @@ export default {
             {{ icon }}
         </span>
         <h3>
-            <slot></slot>
+            <slot name="text"></slot>
         </h3>
     </div>
     
@@ -25,14 +25,9 @@ export default {
 <style scoped>
 .projectOption {
     display: flex;
+    flex-direction: column;
     align-items: center;
     border-radius: 3px;
     border: 1px solid var(--color-border);
     height: 45px;
 }
-
-.projectOption span {
-    font-size: 1.5rem;
-    margin: 0 1rem;
-}
-</style>
