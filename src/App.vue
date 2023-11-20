@@ -12,6 +12,7 @@
 import { RouterView } from 'vue-router';
 import AddButton from './components/Atoms/AddButton.vue';
 import CreatePopup from './components/Templates/CreatePopup.vue';
+import HeaderVue from './components/Organisms/Header.vue';
 export default{
     data() {
     return {
@@ -50,6 +51,7 @@ export default{
   components: {
     AddButton,
     CreatePopup,
+    HeaderVue,
 },
 };
 </script>
