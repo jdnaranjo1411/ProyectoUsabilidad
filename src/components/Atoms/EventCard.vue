@@ -2,7 +2,7 @@
 <template>
     <div class="event-card" :aria-label="event.title + 'tarjeta Evento'" role="button" tabindex="0">
       <div class="event-card__header">
-        <img src="./assets/imgs/1.jpeg" alt="Imagen del evento" />
+        <img src="@/assets/imgs/1.jpeg" alt="Imagen del evento" />
       </div>
       <div class="event-card__content">
         <h3 class="event-card__title">{{ event.title }}</h3>

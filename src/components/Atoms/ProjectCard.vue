@@ -1,7 +1,7 @@
 <template>
     <div class="project-card"  :aria-label="project.title + 'tarjeta Proyecto'"  role="button" tabindex="0" @click="redirect" @keyup.enter="redirect">
       <div class="project-card__header">
-        <img src="./assets/imgs/3.jpeg" alt="Project image" />
+        <img src="@/assets/imgs/3.jpeg" alt="Project image" />
       </div>
       <div class="project-card__content">
         <h3 class="project-card__title">{{ project.title }}</h3>

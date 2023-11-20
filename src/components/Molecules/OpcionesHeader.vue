@@ -1,5 +1,5 @@
 <script>
-import HeaderOpcion from "./components/Atoms/Headerutil/HeaderOpcion.vue";
+import HeaderOpcion from "@/components/Atoms/Headerutil/HeaderOpcion.vue";
 export default {
     components: {
         HeaderOpcion

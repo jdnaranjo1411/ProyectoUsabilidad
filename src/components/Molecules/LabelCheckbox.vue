@@ -1,5 +1,5 @@
 <script>
-import Checkbox from './components/Atoms/Checkbox.vue';
+import Checkbox from '@/components/Atoms/Checkbox.vue';
 export default {
     components: {
         Checkbox,

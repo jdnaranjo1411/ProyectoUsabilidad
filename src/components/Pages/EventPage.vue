@@ -1,6 +1,6 @@
 <script>
-import Dashboard from './components/Templates/Dashboard.vue';
-import Header from './components/Organisms/header.vue';
+import Dashboard from '@/components/Templates/Dashboard.vue';
+import Header from '@/components/Organisms/header.vue';
 import FakeAPI from '../FakeAPI/FakeAPI';
 import ConfiguracionesPopUp from '../Templates/ConfiguracionesPopUp.vue';
 import AccountCard from '../Molecules/AccountCard.vue';

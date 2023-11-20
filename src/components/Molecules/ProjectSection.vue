@@ -8,7 +8,7 @@
   </template>
   
   <script>
-  import ProjectCard from './components/Atoms/ProjectCard.vue';
+  import ProjectCard from '@/components/Atoms/ProjectCard.vue';
   
   export default {
     props: {
