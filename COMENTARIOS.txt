@@ -1,0 +1,20 @@
+10/11/2023 00:10
+He movido varias cosas y creo que algunos errores , la intencion de esta modificacion es
+dar algo de estructura a el proyecto , dentro de la carpeta componentes han quedado distintas subcarpetas
+basadas en atomic design, se propone crear las distintas paginas con esta metodologia, puede que llegemos a necesitar
+crear routers anidados
+15/11/23 00:10
+eeeeeeee , pues he puesto unas variables css para cuando se prefiere el modo oscuro y he puesto un medio intento de fake api
+para eviatr que la informacion quede quemada en los componentes, he investigado un poco acerca de la accesibilidad desde el teclado
+y pues realmente mayormente solo hay que tener en cuenta que el estado focus de lo clickeable no se pierda para el usuario.
+
+y por ultimo no olvidar implementar las etiquetas relacionadas a accesibilidad y las etiquetas semanticas
+https://www.w3.org/WAI/tips/developing/
+
+15/11/26 11:26
+puej , trabaje un poco con el componentes que va a aparecer para configuraciones , probablemente aun hay que configurar algunas cosas al
+css pero pues , principalmente eso 
+
+
+mover dashboard a templates y desde ahi llamar a las distintas secciones? 
++++
