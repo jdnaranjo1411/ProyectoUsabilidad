@@ -29,8 +29,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Cambiar al directorio del proyecto
-        run: cd ./timeflow
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
