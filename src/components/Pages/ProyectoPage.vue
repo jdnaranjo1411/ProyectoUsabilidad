@@ -1,6 +1,6 @@
 <script>
 
-import Header from '@/components/Organisms/header.vue';
+import Header from './components/Organisms/header.vue';
 import FakeAPI from '../FakeAPI/FakeAPI';
 import ConfiguracionesPopUp from '../Templates/ConfiguracionesPopUp.vue';
 import AccountCard from '../Molecules/AccountCard.vue';

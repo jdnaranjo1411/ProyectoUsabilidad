@@ -1,5 +1,5 @@
 import {shallowMount} from '@vue/test-utils'
-import HeaderHamburguer from '@/components/HeaderHamburguer.vue'
+import HeaderHamburguer from './components/HeaderHamburguer.vue'
 
 describe('HeaderHamburguer.vue', () => {
     it('renders props.msg when passed', () => {

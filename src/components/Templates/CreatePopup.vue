@@ -41,8 +41,8 @@
 </template>
   
 <script>
-import Boton1 from '@/components/Atoms/Boton1.vue';
-import LabelInput from '@/components/Molecules/LabelInput.vue';
+import Boton1 from './components/Atoms/Boton1.vue';
+import LabelInput from './components/Molecules/LabelInput.vue';
 export default {
     props: {
         showPopup: Boolean,

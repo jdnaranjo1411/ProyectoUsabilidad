@@ -10,8 +10,8 @@
 
 <script>
 import { RouterView } from 'vue-router';
-import AddButton from '@/components/atoms/AddButton.vue';
-import CreatePopup from '@/components/Templates/CreatePopup.vue';
+import AddButton from './components/Atoms/AddButton.vue';
+import CreatePopup from './components/Templates/CreatePopup.vue';
 export default{
     data() {
     return {

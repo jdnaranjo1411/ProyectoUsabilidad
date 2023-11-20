@@ -6,8 +6,8 @@
   </template>
   
   <script>
-  import FontSelector from "@/components/atoms/FontSelector.vue";
-  import FontSizeSelector from "@/components/atoms/FontSizeSelector.vue";
+  import FontSelector from "./components/atoms/FontSelector.vue";
+  import FontSizeSelector from "./components/atoms/FontSizeSelector.vue";
   
   export default {
     name: "FontConfiguration",

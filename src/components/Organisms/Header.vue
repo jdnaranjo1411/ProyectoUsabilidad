@@ -1,7 +1,7 @@
 <script>
 
-import OpcionesHeader from "@/components/Molecules/OpcionesHeader.vue";
-import HeaderHamburguer from "@/components/Atoms/Headerutil/HeaderHamburguer.vue";
+import OpcionesHeader from "./components/Molecules/OpcionesHeader.vue";
+import HeaderHamburguer from "./components/Atoms/Headerutil/HeaderHamburguer.vue";
 export default{
     components:{
         OpcionesHeader,

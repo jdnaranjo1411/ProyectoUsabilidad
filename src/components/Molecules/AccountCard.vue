@@ -1,5 +1,5 @@
 <script>
-import ProfilePhoto from '@/components/Atoms/ProfilePhoto.vue';
+import ProfilePhoto from './components/Atoms/ProfilePhoto.vue';
 export default {
     components: {
         ProfilePhoto

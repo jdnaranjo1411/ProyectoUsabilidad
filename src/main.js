@@ -1,7 +1,7 @@
 import './assets/main.css';
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import EventPage from '@/components/Pages/EventPage.vue';
+import EventPage from './components/Pages/EventPage.vue';
 import store from './store';
 import App from './App.vue';
 import ProyectoPage from './components/Pages/ProyectoPage.vue';
